@@ -1,0 +1,698 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 512200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeHooks(Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Checking the valid username and password for login function",
+        "description": "",
+        "id": "testing-hotel-booking-and-cancellation-functionalities-in-adactin-application;checking-the-valid-username-and-password-for-login-function",
+        "after": [
+          {
+            "result": {
+              "duration": 220600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterHooks(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3010358100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User launch the adactin application",
+            "match": {
+              "location": "StepDefinition.user_launch_the_adactin_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 843654900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enter the valid username",
+            "match": {
+              "location": "StepDefinition.user_enter_the_valid_username()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 226670400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enter the valid password",
+            "match": {
+              "location": "StepDefinition.user_enter_the_valid_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4335009100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User click the login button",
+            "match": {
+              "location": "StepDefinition.user_click_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 134000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "It lands to the homepage successfully",
+            "match": {
+              "location": "StepDefinition.it_lands_to_the_homepage_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Login"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 160000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeHooks(Scenario)"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "User searching the hotel in application",
+        "description": "",
+        "id": "testing-hotel-booking-and-cancellation-functionalities-in-adactin-application;user-searching-the-hotel-in-application",
+        "after": [
+          {
+            "result": {
+              "duration": 157700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterHooks(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 264259700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User select the hotel location from the dropdown list",
+            "match": {
+              "location": "StepDefinition.user_select_the_hotel_location_from_the_dropdown_list()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 165494300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User select the hotel from the dropdown list",
+            "match": {
+              "location": "StepDefinition.user_select_the_hotel_from_the_dropdown_list()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 158046500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User select the room type from the dropdown list",
+            "match": {
+              "location": "StepDefinition.user_select_the_room_type_from_the_dropdown_list()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 128660700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User select the number of rooms from the dropdown list",
+            "match": {
+              "location": "StepDefinition.user_select_the_number_of_rooms_from_the_dropdown_list()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 224424900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User enter the check in date",
+            "match": {
+              "location": "StepDefinition.user_enter_the_check_in_date()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 234265600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User enter the check out date",
+            "match": {
+              "location": "StepDefinition.user_enter_the_check_out_date()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 200980600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User select the number of adults per room from the dropdown list",
+            "match": {
+              "location": "StepDefinition.user_select_the_number_of_adults_per_room_from_the_dropdown_list()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 103982700,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User select the number of childs per room from the dropdown list",
+            "match": {
+              "location": "StepDefinition.user_select_the_number_of_childs_per_room_from_the_dropdown_list()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1191649500,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User click the search button for searching the hotel",
+            "match": {
+              "location": "StepDefinition.user_click_the_search_button_for_searching_the_hotel()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 102200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "It lands to the search hotel page successfully",
+            "match": {
+              "location": "StepDefinition.it_lands_to_the_search_hotel_page_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@SearchHotel"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 142100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeHooks(Scenario)"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "User selecting and confirming the hotel in the application",
+        "description": "",
+        "id": "testing-hotel-booking-and-cancellation-functionalities-in-adactin-application;user-selecting-and-confirming-the-hotel-in-the-application",
+        "after": [
+          {
+            "result": {
+              "duration": 252600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterHooks(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 241517400,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User reselects and confirms the selected hotel",
+            "match": {
+              "location": "StepDefinition.user_reselects_and_confirms_the_selected_hotel()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1438338700,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User clicks the continue button",
+            "match": {
+              "location": "StepDefinition.user_clicks_the_continue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 104100,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "It lands to the select hotel page successfully",
+            "match": {
+              "location": "StepDefinition.it_lands_to_the_select_hotel_page_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 24,
+            "name": "@SelectHotel"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 244200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeHooks(Scenario)"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "User booking the room in the hotel and making payment",
+        "description": "",
+        "id": "testing-hotel-booking-and-cancellation-functionalities-in-adactin-application;user-booking-the-room-in-the-hotel-and-making-payment",
+        "after": [
+          {
+            "result": {
+              "duration": 89600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterHooks(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 340691800,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User enter the first name",
+            "match": {
+              "location": "StepDefinition.user_enter_the_first_name()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 185221000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "User enter the last name",
+            "match": {
+              "location": "StepDefinition.user_enter_the_last_name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 273002800,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User enter the address",
+            "match": {
+              "location": "StepDefinition.user_enter_the_address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 337927900,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User enter the credit card number",
+            "match": {
+              "location": "StepDefinition.user_enter_the_credit_card_number()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 168532800,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User enter the credit card type",
+            "match": {
+              "location": "StepDefinition.user_enter_the_credit_card_type()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 145156400,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User enter the expiry month of the credit card",
+            "match": {
+              "location": "StepDefinition.user_enter_the_expiry_month_of_the_credit_card()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 160285800,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "User enter the expiry year of the credit card",
+            "match": {
+              "location": "StepDefinition.user_enter_the_expiry_year_of_the_credit_card()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 159661500,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "User enter the credit card cvv number",
+            "match": {
+              "location": "StepDefinition.user_enter_the_credit_card_cvv_number()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 131466700,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "User booking the room by clicking booknow button",
+            "match": {
+              "location": "StepDefinition.user_booking_the_room_by_clicking_booknow_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 68800,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "It lands to the booking hotel page successfully",
+            "match": {
+              "location": "StepDefinition.it_lands_to_the_booking_hotel_page_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 30,
+            "name": "@BookingHotel"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 94200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeHooks(Scenario)"
+            }
+          }
+        ],
+        "line": 44,
+        "name": "User confirming the booked room in the hotel",
+        "description": "",
+        "id": "testing-hotel-booking-and-cancellation-functionalities-in-adactin-application;user-confirming-the-booked-room-in-the-hotel",
+        "after": [
+          {
+            "result": {
+              "duration": 108400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterHooks(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7590205100,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "User click the my itinerary button and confirms",
+            "match": {
+              "location": "StepDefinition.user_click_the_my_itinerary_button_and_confirms()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 125500,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "It lands to the booking confirm page successfully",
+            "match": {
+              "location": "StepDefinition.it_lands_to_the_booking_confirm_page_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 43,
+            "name": "@BookingConfirm"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 98700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeHooks(Scenario)"
+            }
+          }
+        ],
+        "line": 49,
+        "name": "User cancel the booked room in the hotel",
+        "description": "",
+        "id": "testing-hotel-booking-and-cancellation-functionalities-in-adactin-application;user-cancel-the-booked-room-in-the-hotel",
+        "after": [
+          {
+            "result": {
+              "duration": 90200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterHooks(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10751705800,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "User search the booked room and cancelling it",
+            "match": {
+              "location": "StepDefinition.user_search_the_booked_room_and_cancelling_it()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 109138300,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "User reconfirms the room cancellation",
+            "match": {
+              "location": "StepDefinition.user_reconfirms_the_room_cancellation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 82700,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "It lands to the booking itineray page successfully",
+            "match": {
+              "location": "StepDefinition.it_lands_to_the_booking_itineray_page_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 48,
+            "name": "@BookingCancel"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 105600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeHooks(Scenario)"
+            }
+          }
+        ],
+        "line": 55,
+        "name": "User signing out from the hotel application",
+        "description": "",
+        "id": "testing-hotel-booking-and-cancellation-functionalities-in-adactin-application;user-signing-out-from-the-hotel-application",
+        "after": [
+          {
+            "result": {
+              "duration": 94800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterHooks(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3436176000,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "User click the logout button for signing out",
+            "match": {
+              "location": "StepDefinition.user_click_the_logout_button_for_signing_out()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 72300,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "It lands to the signout page successfully",
+            "match": {
+              "location": "StepDefinition.it_lands_to_the_signout_page_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 54,
+            "name": "@Logout"
+          }
+        ]
+      }
+    ],
+    "name": "Testing hotel booking and cancellation functionalities in adactin application",
+    "description": "",
+    "id": "testing-hotel-booking-and-cancellation-functionalities-in-adactin-application",
+    "keyword": "Feature",
+    "uri": "Adactin.feature"
+  }
+]

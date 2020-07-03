@@ -1,0 +1,10 @@
+com\adactin\pom\SignOutPage.class
+com\adactin\pom\BookingHotel.class
+com\adactin\pom\BookingConfirmPage.class
+com\adactin\runner\Runner.class
+com\adactin\pom\SearchHotel.class
+com\adactin\stepdefinition\StepDefinition.class
+com\adactin\pom\SignInPage.class
+com\adactin\runner\TestScript.class
+com\adactin\pom\BookingItineraryPage.class
+com\adactin\pom\SelectHotel.class
