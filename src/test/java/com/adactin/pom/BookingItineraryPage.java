@@ -1,11 +1,13 @@
 package com.adactin.pom;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class BookingItineraryPage {
+import com.adactin.utility.TestData;
+
+public class BookingItineraryPage extends TestData {
 	public WebDriver driver;
 
 	public BookingItineraryPage(WebDriver ldriver) {
@@ -13,10 +15,9 @@ public class BookingItineraryPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath = "//input[@value='Karthik']//parent::td//preceding-sibling::td[4]")
-	private WebElement cancelBtn;
-
 	public WebElement getCancelBtn() {
+		WebElement cancelBtn = driver
+				.findElement(By.xpath("//input[@value='" + firstName + "']//parent::td//preceding-sibling::td[4]"));
 		return cancelBtn;
 	}
 }

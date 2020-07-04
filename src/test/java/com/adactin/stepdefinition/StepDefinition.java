@@ -23,6 +23,7 @@ import cucumber.api.java.en.When;
 public class StepDefinition extends BaseClass {
 	public static WebDriver driver = Runner.driver;
 	PageObjectManager pom = new PageObjectManager(driver);
+	public static String firstName;
 
 	@Given("^User launch the adactin application$")
 	public void user_launch_the_adactin_application() throws Throwable {
@@ -32,12 +33,14 @@ public class StepDefinition extends BaseClass {
 
 	@When("^User enter the valid username$")
 	public void user_enter_the_valid_username() throws Throwable {
-		sendKeysText(pom.getSp().getUsername(), "PavithraN");
+		String userName = FileReaderManager.getInstance().getTestDataInstance().TestDataMeth("User Name");
+		sendKeysText(pom.getSp().getUsername(), userName);
 	}
 
 	@When("^User enter the valid password$")
 	public void user_enter_the_valid_password() throws Throwable {
-		sendKeysText(pom.getSp().getPassword(), "Pavi@2426");
+		String password = FileReaderManager.getInstance().getTestDataInstance().TestDataMeth("Password");
+		sendKeysText(pom.getSp().getPassword(), password);
 
 	}
 
@@ -49,54 +52,62 @@ public class StepDefinition extends BaseClass {
 
 	@Then("^It lands to the homepage successfully$")
 	public void it_lands_to_the_homepage_successfully() throws Throwable {
-		//Assert.assertEquals("a", "A");
-		System.out.println("Validation Pending");
+		// Assert.assertEquals("a", "A");
+		System.out.println("VALIDATION PENDING\n");
 	}
 
 	@When("^User select the hotel location from the dropdown list$")
 	public void user_select_the_hotel_location_from_the_dropdown_list() throws Throwable {
-		dropDownSelect(pom.getSh().getLocation(), "value", "Sydney");
+		String location = FileReaderManager.getInstance().getTestDataInstance().TestDataMeth("Location");
+		dropDownSelect(pom.getSh().getLocation(), "value", location);
 
 	}
 
 	@When("^User select the hotel from the dropdown list$")
 	public void user_select_the_hotel_from_the_dropdown_list() throws Throwable {
-		dropDownSelect(pom.getSh().getHotel(), "value", "Hotel Creek");
+		String hotels = FileReaderManager.getInstance().getTestDataInstance().TestDataMeth("Hotels");
+		dropDownSelect(pom.getSh().getHotel(), "value", hotels);
 
 	}
 
 	@When("^User select the room type from the dropdown list$")
 	public void user_select_the_room_type_from_the_dropdown_list() throws Throwable {
-		dropDownSelect(pom.getSh().getRoomType(), "value", "Standard");
+		String roomType = FileReaderManager.getInstance().getTestDataInstance().TestDataMeth("Room Type");
+		dropDownSelect(pom.getSh().getRoomType(), "value", roomType);
 
 	}
 
 	@When("^User select the number of rooms from the dropdown list$")
 	public void user_select_the_number_of_rooms_from_the_dropdown_list() throws Throwable {
-		dropDownSelect(pom.getSh().getRoomNos(), "value", "1");
+		String numOfRooms = FileReaderManager.getInstance().getTestDataInstance().TestDataMeth("Number of Rooms");
+		dropDownSelect(pom.getSh().getRoomNos(), "value", numOfRooms);
 	}
 
 	@When("^User enter the check in date$")
 	public void user_enter_the_check_in_date() throws Throwable {
-		sendKeysText(pom.getSh().getCheckInDate(), "21/05/2020");
+		String chkInDate = FileReaderManager.getInstance().getTestDataInstance().TestDataMeth("Check In Date");
+		sendKeysText(pom.getSh().getCheckInDate(), chkInDate);
 
 	}
 
 	@When("^User enter the check out date$")
 	public void user_enter_the_check_out_date() throws Throwable {
-		sendKeysText(pom.getSh().getCheckOutDate(), "22/05/2020");
+		String chkOutDate = FileReaderManager.getInstance().getTestDataInstance().TestDataMeth("Check Out Date");
+		sendKeysText(pom.getSh().getCheckOutDate(), chkOutDate);
 
 	}
 
 	@When("^User select the number of adults per room from the dropdown list$")
 	public void user_select_the_number_of_adults_per_room_from_the_dropdown_list() throws Throwable {
-		dropDownSelect(pom.getSh().getAdultsPerRoom(), "value", "2");
+		String adultsPerRoom = FileReaderManager.getInstance().getTestDataInstance().TestDataMeth("Adults per Room");
+		dropDownSelect(pom.getSh().getAdultsPerRoom(), "value", adultsPerRoom);
 
 	}
 
 	@When("^User select the number of childs per room from the dropdown list$")
 	public void user_select_the_number_of_childs_per_room_from_the_dropdown_list() throws Throwable {
-		dropDownSelect(pom.getSh().getChildPerRoom(), "value", "0");
+		String childPerRoom = FileReaderManager.getInstance().getTestDataInstance().TestDataMeth("Children per Room");
+		dropDownSelect(pom.getSh().getChildPerRoom(), "value", childPerRoom);
 
 	}
 
@@ -108,7 +119,7 @@ public class StepDefinition extends BaseClass {
 
 	@Then("^It lands to the search hotel page successfully$")
 	public void it_lands_to_the_search_hotel_page_successfully() throws Throwable {
-		System.out.println("Validation Pending");
+		System.out.println("VALIDATION PENDING\n");
 
 	}
 
@@ -126,55 +137,63 @@ public class StepDefinition extends BaseClass {
 
 	@Then("^It lands to the select hotel page successfully$")
 	public void it_lands_to_the_select_hotel_page_successfully() throws Throwable {
-		System.out.println("Validation Pending");
+		System.out.println("VALIDATION PENDING\n");
 
 	}
 
 	@When("^User enter the first name$")
 	public void user_enter_the_first_name() throws Throwable {
-		sendKeysText(pom.getBh().getFirstName(), "Karthik");
+		String firstName = FileReaderManager.getInstance().getTestDataInstance().TestDataMeth("First Name");
+		sendKeysText(pom.getBh().getFirstName(), firstName);
 
 	}
 
 	@When("^User enter the last name$")
 	public void user_enter_the_last_name() throws Throwable {
-		sendKeysText(pom.getBh().getLastName(), "Tony");
+		String lastName = FileReaderManager.getInstance().getTestDataInstance().TestDataMeth("Last Name");
+		sendKeysText(pom.getBh().getLastName(), lastName);
 
 	}
 
 	@When("^User enter the address$")
 	public void user_enter_the_address() throws Throwable {
-		sendKeysText(pom.getBh().getAddress(), "New york city, America");
+		String billingAddress = FileReaderManager.getInstance().getTestDataInstance().TestDataMeth("Billing Address");
+		sendKeysText(pom.getBh().getAddress(), billingAddress);
 
 	}
 
 	@When("^User enter the credit card number$")
 	public void user_enter_the_credit_card_number() throws Throwable {
-		sendKeysText(pom.getBh().getCreditCardNo(), "1234132412341324");
+		String creditCardNo = FileReaderManager.getInstance().getTestDataInstance().TestDataMeth("Credit Card No.");
+		sendKeysText(pom.getBh().getCreditCardNo(), creditCardNo);
 
 	}
 
 	@When("^User enter the credit card type$")
 	public void user_enter_the_credit_card_type() throws Throwable {
-		dropDownSelect(pom.getBh().getCreditCardType(), "value", "MAST");
+		String creditCardType = FileReaderManager.getInstance().getTestDataInstance().TestDataMeth("Credit Card Type");
+		dropDownSelect(pom.getBh().getCreditCardType(), "value", creditCardType);
 
 	}
 
 	@When("^User enter the expiry month of the credit card$")
 	public void user_enter_the_expiry_month_of_the_credit_card() throws Throwable {
-		dropDownSelect(pom.getBh().getcCardExpiryDate(), "value", "6");
+		String expiryMonth = FileReaderManager.getInstance().getTestDataInstance().TestDataMeth("Expiry Month");
+		dropDownSelect(pom.getBh().getcCardExpiryDate(), "value", expiryMonth);
 
 	}
 
 	@When("^User enter the expiry year of the credit card$")
 	public void user_enter_the_expiry_year_of_the_credit_card() throws Throwable {
-		dropDownSelect(pom.getBh().getcCardExpiryYear(), "value", "2022");
+		String expiryYear = FileReaderManager.getInstance().getTestDataInstance().TestDataMeth("Expiry Year");
+		dropDownSelect(pom.getBh().getcCardExpiryYear(), "value", expiryYear);
 
 	}
 
 	@When("^User enter the credit card cvv number$")
 	public void user_enter_the_credit_card_cvv_number() throws Throwable {
-		sendKeysText(pom.getBh().getcCardCVV(), "777");
+		String cVVNumber = FileReaderManager.getInstance().getTestDataInstance().TestDataMeth("CVV Number");
+		sendKeysText(pom.getBh().getcCardCVV(), cVVNumber);
 
 	}
 
@@ -186,7 +205,7 @@ public class StepDefinition extends BaseClass {
 
 	@Then("^It lands to the booking hotel page successfully$")
 	public void it_lands_to_the_booking_hotel_page_successfully() throws Throwable {
-		System.out.println("Validation Pending");
+		System.out.println("VALIDATION PENDING\n");
 
 	}
 
@@ -198,7 +217,7 @@ public class StepDefinition extends BaseClass {
 
 	@Then("^It lands to the booking confirm page successfully$")
 	public void it_lands_to_the_booking_confirm_page_successfully() throws Throwable {
-		System.out.println("Validation Pending");
+		System.out.println("VALIDATION PENDING\n");
 
 	}
 
@@ -216,7 +235,7 @@ public class StepDefinition extends BaseClass {
 
 	@Then("^It lands to the booking itineray page successfully$")
 	public void it_lands_to_the_booking_itineray_page_successfully() throws Throwable {
-		System.out.println("Validation Pending");
+		System.out.println("VALIDATION PENDING\n");
 
 	}
 
@@ -228,7 +247,7 @@ public class StepDefinition extends BaseClass {
 
 	@Then("^It lands to the signout page successfully$")
 	public void it_lands_to_the_signout_page_successfully() throws Throwable {
-		System.out.println("Validation Pending");
+		System.out.println("VALIDATION PENDING\n");
 
 	}
 

@@ -20,5 +20,10 @@ public class FileReaderManager {
 		ConfigurationReader cr = new ConfigurationReader();
 		return cr;
 	}
+	
+	public TestData getTestDataInstance() throws Throwable {
+		TestData td = new TestData();
+		return td;
+	}
 
 }
