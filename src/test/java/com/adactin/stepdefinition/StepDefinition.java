@@ -52,8 +52,10 @@ public class StepDefinition extends BaseClass {
 
 	@Then("^It lands to the homepage successfully$")
 	public void it_lands_to_the_homepage_successfully() throws Throwable {
-		// Assert.assertEquals("a", "A");
-		System.out.println("VALIDATION PENDING\n");
+		String userName = FileReaderManager.getInstance().getTestDataInstance().TestDataMeth("User Name");
+		String uName = pom.getSh().getUsername().getAttribute("value").replaceAll("Hello ","").replaceAll("!", "");
+		Assert.assertEquals(userName, uName);
+		System.out.println("Login Successful\n");
 	}
 
 	@When("^User select the hotel location from the dropdown list$")

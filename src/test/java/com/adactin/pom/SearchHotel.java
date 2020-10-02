@@ -13,6 +13,9 @@ public class SearchHotel {
 		PageFactory.initElements(driver, this);
 	}
 
+	@FindBy(xpath = "//input[@id='username_show']")
+	private WebElement username;
+
 	@FindBy(id = "location")
 	private WebElement location;
 
@@ -39,6 +42,10 @@ public class SearchHotel {
 
 	@FindBy(xpath = "//input[@type='submit']")
 	private WebElement searchBtn;
+
+	public WebElement getUsername() {
+		return username;
+	}
 
 	public WebElement getLocation() {
 		return location;
