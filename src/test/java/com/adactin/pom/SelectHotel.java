@@ -13,11 +13,18 @@ public class SelectHotel {
 		PageFactory.initElements(driver, this);
 	}
 
+	@FindBy(xpath = "//td[@class='login_title']")
+	private WebElement title1;
+
 	@FindBy(id = "radiobutton_0")
 	private WebElement radioBtn;
 
 	@FindBy(id = "continue")
 	private WebElement continueBtn;
+
+	public WebElement getTitle1() {
+		return title1;
+	}
 
 	public WebElement getRadioBtn() {
 		return radioBtn;

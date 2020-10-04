@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.adactin.runner.Runner
 -------------------------------------------------------------------------------
-Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 30.279 s - in com.adactin.runner.Runner
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 44.848 s - in com.adactin.runner.Runner

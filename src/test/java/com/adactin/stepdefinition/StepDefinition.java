@@ -55,7 +55,7 @@ public class StepDefinition extends BaseClass {
 		String userName = FileReaderManager.getInstance().getTestDataInstance().TestDataMeth("User Name");
 		String uName = pom.getSh().getUsername().getAttribute("value").replaceAll("Hello ","").replaceAll("!", "");
 		Assert.assertEquals(userName, uName);
-		System.out.println("Login Successful\n");
+		System.out.println("Successfully landed on Login page\n");
 	}
 
 	@When("^User select the hotel location from the dropdown list$")
@@ -121,7 +121,9 @@ public class StepDefinition extends BaseClass {
 
 	@Then("^It lands to the search hotel page successfully$")
 	public void it_lands_to_the_search_hotel_page_successfully() throws Throwable {
-		System.out.println("VALIDATION PENDING\n");
+		String pageHeader = pom.getSl().getTitle1().getText();
+		Assert.assertEquals("Select Hotel", pageHeader);
+		System.out.println("Successfully landed on Select Hotel page\n");
 
 	}
 
