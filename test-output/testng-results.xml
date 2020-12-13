@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-13T17:24:43 IST" name="Default suite" finished-at="2020-12-13T17:24:48 IST" duration-ms="5279">
+  <suite started-at="2020-12-13T17:43:44 IST" name="Default suite" finished-at="2020-12-13T17:44:15 IST" duration-ms="31469">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.adactin.runner.Runner@70e8f8e]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="Runner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.adactin.runner.Runner@1817d444]" name="feature" class="com.adactin.runner.Runner"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2020-12-13T17:24:43 IST" name="Default test" finished-at="2020-12-13T17:24:48 IST" duration-ms="5279">
+    <test started-at="2020-12-13T17:43:44 IST" name="Default test" finished-at="2020-12-13T17:44:15 IST" duration-ms="31469">
       <class name="com.adactin.runner.Runner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.adactin.runner.Runner@70e8f8e]" started-at="2020-12-13T17:24:43 IST" name="setUpClass" finished-at="2020-12-13T17:24:43 IST" duration-ms="557" status="PASS">
+        <test-method is-config="true" signature="browswerOpen()[pri:0, instance:com.adactin.runner.Runner@1817d444]" started-at="2020-12-13T17:43:44 IST" name="browswerOpen" finished-at="2020-12-13T17:43:51 IST" duration-ms="7532" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browswerOpen -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.adactin.runner.Runner@1817d444]" started-at="2020-12-13T17:43:51 IST" name="setUpClass" finished-at="2020-12-13T17:43:52 IST" duration-ms="531" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.adactin.runner.Runner@70e8f8e]" started-at="2020-12-13T17:24:43 IST" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-12-13T17:24:47 IST" duration-ms="3373" status="FAIL">
+        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.adactin.runner.Runner@1817d444]" started-at="2020-12-13T17:43:52 IST" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-12-13T17:44:14 IST" duration-ms="21984" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,55 +26,14 @@
               </value>
             </param>
           </params>
-          <exception class="cucumber.runtime.CucumberException">
-            <message>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy24.getAttribute(Unknown Source)
-at com.adactin.stepdefinition.StepDefinition.it_lands_to_the_homepage_successfully(StepDefinition.java:58)
-at ✽.Then It lands to the homepage successfully(Adactin.feature:9)
-]]>
-            </full-stacktrace>
-          </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.adactin.runner.Runner@70e8f8e]" started-at="2020-12-13T17:24:47 IST" name="tearDownClass" finished-at="2020-12-13T17:24:48 IST" duration-ms="1078" status="PASS">
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:com.adactin.runner.Runner@1817d444]" started-at="2020-12-13T17:44:14 IST" name="browserClose" finished-at="2020-12-13T17:44:14 IST" duration-ms="400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.adactin.runner.Runner@1817d444]" started-at="2020-12-13T17:44:14 IST" name="tearDownClass" finished-at="2020-12-13T17:44:15 IST" duration-ms="757" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
