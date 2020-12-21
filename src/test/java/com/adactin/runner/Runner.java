@@ -28,6 +28,7 @@ public class Runner extends BaseClass {
 		driver = browserLaunch(browserName);
 	}
 
+	//testing
 	@AfterClass
 	public static void browserClose() {
 		driver.close();
