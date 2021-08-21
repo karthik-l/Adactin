@@ -5,9 +5,11 @@
     <classes>
       <class name="com.adactin.runner.Runner">
         <methods>
-          <include name="setUpClass"/>
-          <include name="feature" invocation-numbers="0"/>
           <include name="tearDownClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="browserClose"/>
+          <include name="setUpClass"/>
+          <include name="browswerOpen"/>
         </methods>
       </class> <!-- com.adactin.runner.Runner -->
     </classes>

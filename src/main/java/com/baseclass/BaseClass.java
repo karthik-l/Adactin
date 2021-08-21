@@ -14,11 +14,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 	public static WebDriver driver;
@@ -28,12 +32,16 @@ public class BaseClass {
 	public static WebDriver browserLaunch(String browsername) {
 		try {
 			if (browsername.equalsIgnoreCase("chrome")) {
-				System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver.exe");
+				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver();
 			}
-			if (browsername.equalsIgnoreCase("ie")) {
-				System.setProperty("webdriver.ie.driver", ".\\Drivers\\IEDriverServer.exe");
-				driver = new InternetExplorerDriver();
+			if (browsername.equalsIgnoreCase("firefox")) {
+				WebDriverManager.firefoxdriver().setup();
+				driver = new FirefoxDriver();
+			}
+			if (browsername.equalsIgnoreCase("edge")) {
+				WebDriverManager.edgedriver().setup();
+				driver = new EdgeDriver();
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -283,6 +291,7 @@ public class BaseClass {
 	public static boolean isEnabled(WebElement checkElement) {
 		boolean enabled = false;
 		try {
+			waitVisibility(checkElement);
 			enabled = checkElement.isEnabled();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -357,13 +366,16 @@ public class BaseClass {
 	}
 
 	// 23 --> Get attribute
-	public static void getAttributeMeth(WebElement findElement, String value) {
+	public static String getAttributeMeth(WebElement findElement, String value) {
+		String attribute = null;
 		try {
-			findElement.getAttribute(value);
+			waitVisibility(findElement);
+			attribute = findElement.getAttribute(value);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		return attribute;
 	}
 
 	// 24 --> Wait(3)
